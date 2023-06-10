@@ -10,10 +10,10 @@
     realizar esta viagem.
 */
 
-let preco_do_combustivel = 5.79;
-let gasto_combustivel_km = 10;
+let preco_do_combustivel = 5.21;
+let gasto_combustivel_km = 14;
 let distancia_km = 100;
 
 let valor_gasto_combustivel = (distancia_km / gasto_combustivel_km) * preco_do_combustivel;
 
-console.log(valor_gasto_combustivel + 'l');
+console.log(valor_gasto_combustivel.toFixed(2) + ' litros');
