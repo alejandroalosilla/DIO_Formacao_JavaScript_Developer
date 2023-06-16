@@ -1,0 +1,29 @@
+function calcularImc(peso, altura) {
+    return peso / Math.pow(altura, 2);
+}
+
+function classificarImc(imc) {
+    
+    console.log('IMC:', imc.toFixed(2))
+
+    if (imc < 18.5) {
+        return 'Abaixo do peso.';
+    } else if (imc >= 18.5 && imc <= 25) {
+        return 'Peso normal.';
+    } else if (imc > 25 && imc <=30) {
+        return 'Acima do peso.';
+    } else if (imc > 30 && imc <= 40) {
+        return 'Obeso';
+    } else {
+        return 'Obesidade Grave';
+    }
+}
+
+// Main
+(function () {
+    let peso = 75;
+    let altura = 1.75;
+
+    const IMC = calcularImc(peso, altura);
+    console.log(classificarImc(IMC));
+})();
