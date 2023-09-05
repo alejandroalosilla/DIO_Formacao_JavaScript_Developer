@@ -8,3 +8,30 @@ const pessoa = {
 };
 
 pessoa.descrever();
+
+
+class carro {
+    nome;
+    ano;
+    preco;
+    placa;
+
+    descrever (){
+        console.log(`O nome do carro é ${this.nome}, o ano é ${this.ano}, o preço é ${this.preco} e a placa é ${this.placa}`)
+    }
+}
+
+let honda = new carro()
+honda.nome = 'Honda Fit'
+honda.ano = 2023
+honda.preco = 60000
+honda.placa = 'PG567'
+
+let toyota = new carro()
+toyota.nome = 'Toyota Etios'
+toyota.ano = 2017
+toyota.preco = 40000
+toyota.placa = 'ASD3134'
+
+honda.descrever()
+toyota.descrever()
